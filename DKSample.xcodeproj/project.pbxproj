@@ -22,6 +22,7 @@
 		58198BF916294BE10084D7E0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58198BF816294BE10084D7E0 /* MapKit.framework */; };
 		58198C00162A8E720084D7E0 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 58198BFD162A8E720084D7E0 /* TileOverlay.m */; };
 		58198C01162A8E720084D7E0 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58198BFF162A8E720084D7E0 /* TileOverlayView.m */; };
+		5886C258162ACD1F0089ADED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5886C257162ACD1F0089ADED /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		58198BFD162A8E720084D7E0 /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileOverlay.m; path = TileOverlay/TileOverlay.m; sourceTree = "<group>"; };
 		58198BFE162A8E720084D7E0 /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlayView.h; path = TileOverlay/TileOverlayView.h; sourceTree = "<group>"; };
 		58198BFF162A8E720084D7E0 /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileOverlayView.m; path = TileOverlay/TileOverlayView.m; sourceTree = "<group>"; };
+		5886C257162ACD1F0089ADED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				58198BF016294B4B0084D7E0 /* ViewController.h */,
 				58198BF116294B4B0084D7E0 /* ViewController.m */,
 				58198BD916294B4A0084D7E0 /* Supporting Files */,
+				5886C257162ACD1F0089ADED /* README.md */,
 			);
 			path = DKSample;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				58198BE916294B4B0084D7E0 /* Default-568h@2x.png in Resources */,
 				58198BEC16294B4B0084D7E0 /* MainStoryboard_iPhone.storyboard in Resources */,
 				58198BEF16294B4B0084D7E0 /* MainStoryboard_iPad.storyboard in Resources */,
+				5886C258162ACD1F0089ADED /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
