@@ -17,6 +17,9 @@
                                     <constraint firstAttribute="height" constant="1004" id="Mti-XD-L7z"/>
                                     <constraint firstAttribute="width" constant="768" id="cfx-AS-cGD"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="OOs-bd-ZAu"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -25,6 +28,9 @@
                             <constraint firstItem="wUE-jy-MXg" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="-3" id="rtI-Md-XzQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="wUE-jy-MXg" id="MMF-PX-F8x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,6 +42,9 @@
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TileOverlay/TileOverlay.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <MKMapViewDelegate> {
+    IBOutlet MKMapView *map;
+}
+@property (nonatomic, retain) TileOverlay *overlay;
 @end
+

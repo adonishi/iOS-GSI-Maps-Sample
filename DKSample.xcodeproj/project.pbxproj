@@ -20,6 +20,8 @@
 		58198BEF16294B4B0084D7E0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58198BED16294B4B0084D7E0 /* MainStoryboard_iPad.storyboard */; };
 		58198BF216294B4B0084D7E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58198BF116294B4B0084D7E0 /* ViewController.m */; };
 		58198BF916294BE10084D7E0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58198BF816294BE10084D7E0 /* MapKit.framework */; };
+		58198C00162A8E720084D7E0 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 58198BFD162A8E720084D7E0 /* TileOverlay.m */; };
+		58198C01162A8E720084D7E0 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58198BFF162A8E720084D7E0 /* TileOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		58198BF016294B4B0084D7E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		58198BF116294B4B0084D7E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		58198BF816294BE10084D7E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		58198BFC162A8E720084D7E0 /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlay.h; path = TileOverlay/TileOverlay.h; sourceTree = "<group>"; };
+		58198BFD162A8E720084D7E0 /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileOverlay.m; path = TileOverlay/TileOverlay.m; sourceTree = "<group>"; };
+		58198BFE162A8E720084D7E0 /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlayView.h; path = TileOverlay/TileOverlayView.h; sourceTree = "<group>"; };
+		58198BFF162A8E720084D7E0 /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileOverlayView.m; path = TileOverlay/TileOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,6 @@
 		58198BC316294B4A0084D7E0 = {
 			isa = PBXGroup;
 			children = (
-				58198BF816294BE10084D7E0 /* MapKit.framework */,
 				58198BD816294B4A0084D7E0 /* DKSample */,
 				58198BD116294B4A0084D7E0 /* Frameworks */,
 				58198BCF16294B4A0084D7E0 /* Products */,
@@ -79,6 +84,7 @@
 		58198BD116294B4A0084D7E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58198BF816294BE10084D7E0 /* MapKit.framework */,
 				58198BD216294B4A0084D7E0 /* UIKit.framework */,
 				58198BD416294B4A0084D7E0 /* Foundation.framework */,
 				58198BD616294B4A0084D7E0 /* CoreGraphics.framework */,
@@ -89,6 +95,7 @@
 		58198BD816294B4A0084D7E0 /* DKSample */ = {
 			isa = PBXGroup;
 			children = (
+				58198C02162A8E870084D7E0 /* TileOverlay */,
 				58198BE116294B4B0084D7E0 /* AppDelegate.h */,
 				58198BE216294B4B0084D7E0 /* AppDelegate.m */,
 				58198BEA16294B4B0084D7E0 /* MainStoryboard_iPhone.storyboard */,
@@ -112,6 +119,17 @@
 				58198BE816294B4B0084D7E0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58198C02162A8E870084D7E0 /* TileOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				58198BFC162A8E720084D7E0 /* TileOverlay.h */,
+				58198BFD162A8E720084D7E0 /* TileOverlay.m */,
+				58198BFE162A8E720084D7E0 /* TileOverlayView.h */,
+				58198BFF162A8E720084D7E0 /* TileOverlayView.m */,
+			);
+			name = TileOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +202,8 @@
 				58198BDF16294B4B0084D7E0 /* main.m in Sources */,
 				58198BE316294B4B0084D7E0 /* AppDelegate.m in Sources */,
 				58198BF216294B4B0084D7E0 /* ViewController.m in Sources */,
+				58198C00162A8E720084D7E0 /* TileOverlay.m in Sources */,
+				58198C01162A8E720084D7E0 /* TileOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +291,7 @@
 		58198BF616294B4B0084D7E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKSample/DKSample-Prefix.pch";
 				INFOPLIST_FILE = "DKSample/DKSample-Info.plist";
@@ -282,6 +303,7 @@
 		58198BF716294B4B0084D7E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKSample/DKSample-Prefix.pch";
 				INFOPLIST_FILE = "DKSample/DKSample-Info.plist";
@@ -309,6 +331,7 @@
 				58198BF716294B4B0084D7E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
