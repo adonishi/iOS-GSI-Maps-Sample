@@ -89,7 +89,7 @@
         CGRect rect = [self rectForMapRect:tile.frame];
         
       //  UIImage *image = [[UIImage alloc] initWithContentsOfFile:tile.imagePath];
-        NSString *path = [[NSString alloc] initWithFormat:@"http://tile.openstreetmap.org/%@.png", tile.imagePath];
+        NSString *path = [[NSString alloc] initWithFormat:@"http://cyberjapandata.gsi.go.jp/%@.png", tile.imagePath];
        // NSLog(@"Loading tile from URL %@", path);
         UIImage *image =[UIImage imageWithData: [NSData   
                                                  dataWithContentsOfURL:[NSURL URLWithString: path]]];

@@ -33,7 +33,7 @@
     map.visibleMapRect = visibleRect;
 
     // center to Fuji-san.
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.025, 0.025);
+    MKCoordinateSpan span = MKCoordinateSpanMake(4.0, 4.0);
     CLLocationCoordinate2D centerCoordinate = { 35.360628, 138.727365 };
     MKCoordinateRegion coordinateRegion =
     MKCoordinateRegionMake(centerCoordinate, span);
