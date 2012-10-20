@@ -295,7 +295,7 @@
 		58198BF616294B4B0084D7E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKSample/DKSample-Prefix.pch";
 				INFOPLIST_FILE = "DKSample/DKSample-Info.plist";
@@ -307,7 +307,7 @@
 		58198BF716294B4B0084D7E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKSample/DKSample-Prefix.pch";
 				INFOPLIST_FILE = "DKSample/DKSample-Info.plist";

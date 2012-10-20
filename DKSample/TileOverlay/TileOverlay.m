@@ -60,16 +60,10 @@
 - (id)initWithFrame:(MKMapRect)f path:(NSString *)p
 {
     if (self = [super init]) {
-        imagePath = [p retain];
+        imagePath = p;
         frame = f;
     }
     return self;
-}
-
-- (void)dealloc
-{
-    [imagePath release];
-    [super dealloc];
 }
 
 @end
@@ -102,12 +96,6 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
 - (MKMapRect)boundingMapRect
 {
     return boundingMapRect;
-}
-
-- (void)dealloc
-{
-    [tilePaths release];
-    [super dealloc];
 }
 
 - (NSArray *)tilesInMapRect:(MKMapRect)rect zoomScale:(MKZoomScale)scale
@@ -161,8 +149,6 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
                 
                 ImageTile *tile = [[ImageTile alloc] initWithFrame:frame path:tileKey];
                 [tiles addObject:tile];
-                [tile release];
-            [tileKey release];
         }
     }
     return tiles;

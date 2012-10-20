@@ -100,8 +100,6 @@
         CGContextScaleCTM(context, 1, -1);
         CGContextDrawImage(context, CGRectMake(0, 0, image.size.width, image.size.height), [image CGImage]);
         CGContextRestoreGState(context);
-        [path release]; 
-
     }
 }
 
