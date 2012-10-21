@@ -53,4 +53,19 @@
     return view;
 }
 
+- (IBAction)doAbout:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"「電子国土サンプル」について"
+                          message:@"この背景地図等データは、国土地理院の電子国土Webシステムから配信されたものである。\nこのアプリケーションのコードはFreeBSD Licenseとする。\n使用したアイコンはCreative Commons Attribution 3.0 United States Licenseである。\nFREE ICONS BY GLYPHISH\nCreated by Joseph Wain, 2012\nWeb: http://glyphish.com or http://penandthink.com\nTwitter: @glyphish or @jpwain"
+                          delegate:self
+                          cancelButtonTitle:nil
+                          otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+
+- (IBAction)doLocation:(id)sender
+{
+}
+
 @end

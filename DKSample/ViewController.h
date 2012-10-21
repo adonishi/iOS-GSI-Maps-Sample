@@ -11,7 +11,10 @@
 
 @interface ViewController : UIViewController <MKMapViewDelegate> {
     IBOutlet MKMapView *map;
+    IBOutlet UIBarButtonItem *about;
+    IBOutlet UIBarButtonItem *currentLocation;
 }
 @property (nonatomic, retain) TileOverlay *overlay;
+- (IBAction)doAbout:(id)sender;
+- (IBAction)doLocation:(id)sender;
 @end
-
