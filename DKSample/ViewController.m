@@ -66,6 +66,8 @@
 
 - (IBAction)doLocation:(id)sender
 {
+    [map setUserTrackingMode:MKUserTrackingModeFollow animated:TRUE ];
+    map.showsUserLocation = TRUE;
 }
 
 @end
