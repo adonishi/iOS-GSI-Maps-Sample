@@ -28,6 +28,7 @@ http://portal.cyberjapan.jp/portalsite/kiyaku/kyodaku.html
 # このコードの使用方法
 1. TileOverlayフォルダ内のコードを使用するプロジェクトに追加。
 2. プロジェクト内のMKMapViewを管理するViewControllerから、TileOverlayをMKMapViewにaddOverlayする。
+
     overlay = [[TileOverlay alloc] initOverlay];
     [map addOverlay:overlay];
 
