@@ -57,7 +57,7 @@
 {
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:@"「電子国土サンプル」について"
-                          message:@"電子国土 v4 iOS サンプルコード\nhttps://github.com/adonishi/iOS-DenshiKokudo-v4-Sample\n\nこの背景地図等データは、国土地理院の電子国土Webシステムから配信されたものであり、その使用に関しては国土地理院の利用規約に従うようおねがいします。「（国土地理院背景地図等データ利用許諾番号）2012-034号」\n\nこのアプリケーションのコード自身はFreeBSD Licenseとする。\n\"FreeBSD License\" Copyright 2012 DKSample. All rights reserved.\n\n使用したアイコンはCreative Commons Attribution 3.0 United States Licenseである。\nFREE ICONS BY GLYPHISH\nCreated by Joseph Wain, 2012\nWeb: http://glyphish.com or http://penandthink.com\nTwitter: @glyphish or @jpwain"
+                          message:@"電子国土 v4 iOS サンプルコード\nhttps://github.com/adonishi/iOS-DenshiKokudo-v4-Sample\n\nこの背景地図等データは、国土地理院の電子国土Webシステムから配信されたものであり、その使用に関しては国土地理院の利用規約に従うようお願いします。「（国土地理院背景地図等データ利用許諾番号）2012-034号」\n\nこのアプリケーションのコード自身はFreeBSD Licenseとする。\n\"FreeBSD License\" Copyright 2012 DKSample. All rights reserved.\n\n使用したアイコンはCreative Commons Attribution 3.0 United States Licenseである。\nFREE ICONS BY GLYPHISH\nCreated by Joseph Wain, 2012\nWeb: http://glyphish.com or http://penandthink.com\nTwitter: @glyphish or @jpwain"
                           delegate:self
                           cancelButtonTitle:nil
                           otherButtonTitles:@"OK", nil];
