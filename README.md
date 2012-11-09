@@ -1,6 +1,6 @@
 # 電子国土 v4 iOS サンプルコード
 
-Denshi Kokudo v4 sample code for iOS.
+Denshi Kokudo v4 sample code for iOS. (iOS 6 or up)
 
 based on OpenStreetMap "OSM in MapKit" code.
 http://wiki.openstreetmap.org/wiki/OSM_in_MapKit
@@ -18,19 +18,24 @@ http://wiki.openstreetmap.org/wiki/OSM_in_MapKit
 そして、そのコードの元になる"Lets do it World"のコードを使用しました。
 https://github.com/nutiteq/ldiw-iphone
 
+アプリケーションは、iOS6以降のOSで動作します。
+
 # 許諾
 このコードを使用して、電子国土のタイル画像をあなたのアプリケーションで表示するためには、国土地理院の許諾が必要です。
-詳しくは以下のページを参照してください。
+詳しくは以下のページを参照してください。（後ろの方の「■国土地理院背景地図等データ利用規約」＞「背景地図等データを表示可能なソフトウェア等を開発する場合」に記述が有ります。）
 http://portal.cyberjapan.jp/portalsite/kiyaku/kyodaku.html
 
-参考として、このアプリケーションの許諾に使用した申請書を、shinsei.docとして置いてあります。
+このアプリケーション自身の許諾番号は「（国土地理院背景地図等データ利用許諾番号）2012-034号」です。
+参考として、このアプリケーションの許諾に使用した申請書を、doc/shinsei.docとして置いてあります。
+上記のサイトに有償か無償かの情報はありませんでしたが、このアプリケーションの許諾は無償でおりました。（せいぜい切手代程度？）
+ただ、郵送で申請するので、２週間弱の時間がかかりました。
 
 # このコードの使用方法
 1. TileOverlayフォルダ内のコードを使用するプロジェクトに追加。
 2. プロジェクト内のMKMapViewを管理するViewControllerから、TileOverlayをMKMapViewにaddOverlayする。
 ```
-    overlay = [[TileOverlay alloc] initOverlay];
-    [map addOverlay:overlay];
+overlay = [[TileOverlay alloc] initOverlay];
+[map addOverlay:overlay];
 ```
 
 # 既知の問題

@@ -81,14 +81,13 @@
     // list may be 1 or more images (but not 0 because canDrawMapRect would have
     // returned NO in that case).
     NSArray *tilesInRect = [tileOverlay tilesInMapRect:mapRect zoomScale:zoomScale];
-    
+
     CGContextSetAlpha(context, tileAlpha);
         
     for (ImageTile *tile in tilesInRect) {
         // For each image tile, draw it in its corresponding MKMapRect frame
         CGRect rect = [self rectForMapRect:tile.frame];
         
-      //  UIImage *image = [[UIImage alloc] initWithContentsOfFile:tile.imagePath];
         NSString *path = [[NSString alloc] initWithFormat:@"http://cyberjapandata.gsi.go.jp/%@.png", tile.imagePath];
        // NSLog(@"Loading tile from URL %@", path);
         UIImage *image =[UIImage imageWithData: [NSData   
