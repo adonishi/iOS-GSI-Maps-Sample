@@ -48,6 +48,20 @@
 
 #import <MapKit/MapKit.h>
 
+
+#define MAPMODE_STD     1
+#define MAPMODE_PALE    2
+#define MAPMODE_BLANK   3
+#define MAPMODE_ENGLISH 4
+#define MAPMODE_RELIEF  5 // NOTE: need special condition to use.
+                          //       see http://portal.cyberjapan.jp/help/development.html#relief
+#define MAPMODE_ORT     6
+#define MAPMODE_GAZO1   7
+#define MAPMODE_GAZO2   8
+#define MAPMODE_GAZO3   9
+#define MAPMODE_GAZO4  10
+
+
 @interface ImageTile : NSObject {
     NSString *imagePath;
     MKMapRect frame;
@@ -61,6 +75,7 @@
 @interface TileOverlay : NSObject <MKOverlay> {
     MKMapRect boundingMapRect;
     NSSet *tilePaths;
+    NSInteger mapMode;
 }
 
 - (id)initOverlay;

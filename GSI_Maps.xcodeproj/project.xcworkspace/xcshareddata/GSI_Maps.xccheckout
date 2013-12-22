@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1E51E2E3-974C-42EB-9C75-97ABE1CA7554</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GSI_Maps</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7012D98-1244-48EC-AAFE-750F046E1FB2</key>
+		<string>ssh://github.com/adonishi/iOS-GSI-Maps-Sample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GSI_Maps.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7012D98-1244-48EC-AAFE-750F046E1FB2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/adonishi/iOS-GSI-Maps-Sample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7012D98-1244-48EC-AAFE-750F046E1FB2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7012D98-1244-48EC-AAFE-750F046E1FB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-GSI-Maps-Sample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

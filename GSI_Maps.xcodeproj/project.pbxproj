@@ -28,14 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58198BCE16294B4A0084D7E0 /* DKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58198BCE16294B4A0084D7E0 /* GSI_Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSI_Maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58198BD216294B4A0084D7E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		58198BD416294B4A0084D7E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		58198BD616294B4A0084D7E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		58198BDA16294B4A0084D7E0 /* DKSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKSample-Info.plist"; sourceTree = "<group>"; };
+		58198BDA16294B4A0084D7E0 /* GSI_Maps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GSI_Maps-Info.plist"; sourceTree = "<group>"; };
 		58198BDC16294B4A0084D7E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58198BDE16294B4A0084D7E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		58198BE016294B4B0084D7E0 /* DKSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKSample-Prefix.pch"; sourceTree = "<group>"; };
+		58198BE016294B4B0084D7E0 /* GSI_Maps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GSI_Maps-Prefix.pch"; sourceTree = "<group>"; };
 		58198BE116294B4B0084D7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58198BE216294B4B0084D7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		58198BE416294B4B0084D7E0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5886C25A162AD1CF0089ADED /* README.md */,
-				58198BD816294B4A0084D7E0 /* DKSample */,
+				58198BD816294B4A0084D7E0 /* GSI_Maps */,
 				58198BD116294B4A0084D7E0 /* Frameworks */,
 				58198BCF16294B4A0084D7E0 /* Products */,
 			);
@@ -83,7 +83,7 @@
 		58198BCF16294B4A0084D7E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58198BCE16294B4A0084D7E0 /* DKSample.app */,
+				58198BCE16294B4A0084D7E0 /* GSI_Maps.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +99,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		58198BD816294B4A0084D7E0 /* DKSample */ = {
+		58198BD816294B4A0084D7E0 /* GSI_Maps */ = {
 			isa = PBXGroup;
 			children = (
 				58198C02162A8E870084D7E0 /* TileOverlay */,
@@ -110,7 +110,7 @@
 				58198BF116294B4B0084D7E0 /* ViewController.m */,
 				58198BD916294B4A0084D7E0 /* Supporting Files */,
 			);
-			path = DKSample;
+			path = GSI_Maps;
 			sourceTree = "<group>";
 		};
 		58198BD916294B4A0084D7E0 /* Supporting Files */ = {
@@ -119,10 +119,10 @@
 				58A792C3164CEDCA0064F23E /* DKicon02.png */,
 				58B76DA3163FDD78005E530B /* location.png */,
 				58B76DA1163FDD69005E530B /* DKicon01.png */,
-				58198BDA16294B4A0084D7E0 /* DKSample-Info.plist */,
+				58198BDA16294B4A0084D7E0 /* GSI_Maps-Info.plist */,
 				58198BDB16294B4A0084D7E0 /* InfoPlist.strings */,
 				58198BDE16294B4A0084D7E0 /* main.m */,
-				58198BE016294B4B0084D7E0 /* DKSample-Prefix.pch */,
+				58198BE016294B4B0084D7E0 /* GSI_Maps-Prefix.pch */,
 				58198BE416294B4B0084D7E0 /* Default.png */,
 				58198BE616294B4B0084D7E0 /* Default@2x.png */,
 				58198BE816294B4B0084D7E0 /* Default-568h@2x.png */,
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58198BCD16294B4A0084D7E0 /* DKSample */ = {
+		58198BCD16294B4A0084D7E0 /* GSI_Maps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58198BF516294B4B0084D7E0 /* Build configuration list for PBXNativeTarget "DKSample" */;
+			buildConfigurationList = 58198BF516294B4B0084D7E0 /* Build configuration list for PBXNativeTarget "GSI_Maps" */;
 			buildPhases = (
 				58198BCA16294B4A0084D7E0 /* Sources */,
 				58198BCB16294B4A0084D7E0 /* Frameworks */,
@@ -156,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = DKSample;
+			name = GSI_Maps;
 			productName = DKSample;
-			productReference = 58198BCE16294B4A0084D7E0 /* DKSample.app */;
+			productReference = 58198BCE16294B4A0084D7E0 /* GSI_Maps.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,10 +167,10 @@
 		58198BC516294B4A0084D7E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = adonishi;
 			};
-			buildConfigurationList = 58198BC816294B4A0084D7E0 /* Build configuration list for PBXProject "DKSample" */;
+			buildConfigurationList = 58198BC816294B4A0084D7E0 /* Build configuration list for PBXProject "GSI_Maps" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58198BCD16294B4A0084D7E0 /* DKSample */,
+				58198BCD16294B4A0084D7E0 /* GSI_Maps */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,10 +298,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKSample/DKSample-Prefix.pch";
-				INFOPLIST_FILE = "DKSample/DKSample-Info.plist";
+				GCC_PREFIX_HEADER = "GSI_Maps/GSI_Maps-Prefix.pch";
+				INFOPLIST_FILE = "GSI_Maps/GSI_Maps-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GSI_Maps;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -312,10 +313,10 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKSample/DKSample-Prefix.pch";
-				INFOPLIST_FILE = "DKSample/DKSample-Info.plist";
+				GCC_PREFIX_HEADER = "GSI_Maps/GSI_Maps-Prefix.pch";
+				INFOPLIST_FILE = "GSI_Maps/GSI_Maps-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GSI_Maps;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -324,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58198BC816294B4A0084D7E0 /* Build configuration list for PBXProject "DKSample" */ = {
+		58198BC816294B4A0084D7E0 /* Build configuration list for PBXProject "GSI_Maps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58198BF316294B4B0084D7E0 /* Debug */,
@@ -333,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58198BF516294B4B0084D7E0 /* Build configuration list for PBXNativeTarget "DKSample" */ = {
+		58198BF516294B4B0084D7E0 /* Build configuration list for PBXNativeTarget "GSI_Maps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58198BF616294B4B0084D7E0 /* Debug */,

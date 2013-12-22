@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="bYI-RO-vAv">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0to-i7-9LI"/>
+                        <viewControllerLayoutGuide type="bottom" id="4IT-VG-cYL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XMv-zD-Q8X">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="QDb-gK-UNd"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XMv-zD-Q8X" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="06a-X4-ApJ"/>
+                            <constraint firstItem="XMv-zD-Q8X" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="G2O-0d-TKs"/>
+                            <constraint firstItem="XMv-zD-Q8X" firstAttribute="top" secondItem="0to-i7-9LI" secondAttribute="bottom" id="V5O-Z9-I6V"/>
+                            <constraint firstAttribute="bottom" secondItem="XMv-zD-Q8X" secondAttribute="bottom" id="wZn-Qc-8aQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5dz-fe-vPb">
+                        <barButtonItem key="leftBarButtonItem" title="About" id="QkA-HE-Ccg">
+                            <connections>
+                                <action selector="doAbout:" destination="2" id="2kh-NX-7dN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="location.png" id="ikq-2M-5HV">
+                            <connections>
+                                <action selector="doLocation:" destination="2" id="gmB-4m-3r9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="about" destination="QkA-HE-Ccg" id="lK0-pn-eZ5"/>
+                        <outlet property="currentLocation" destination="ikq-2M-5HV" id="f2P-sp-aCa"/>
+                        <outlet property="map" destination="XMv-zD-Q8X" id="TgP-Wy-WTP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="-116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ch1-TP-JO7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bYI-RO-vAv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ECe-U0-CZN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Qpn-4s-fDo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pm-0P-l1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.png" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

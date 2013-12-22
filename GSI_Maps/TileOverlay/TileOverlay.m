@@ -83,6 +83,7 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
 {
     if (self = [super init]) {
         boundingMapRect = MKMapRectMake(-180, -90, MKMapSizeWorld.width, MKMapSizeWorld.height);
+        self->mapMode = MAPMODE_STD;
     }
     return self;
 }
@@ -108,36 +109,51 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
     NSInteger maxY = floor((MKMapRectGetMaxY(rect) * scale) / TILE_SIZE);
     
     NSMutableArray *tiles = nil;
-    NSString *mode;
-    if (z <= 8)
-        mode = @"JAIS"; // or @"RELIEF"
-    else if (z <= 11)
-        mode = @"BAFD1000K";
-    else if (z <= 14)
-        mode = @"BAFD200K";
-    else if (z <= 17)
-        mode = @"DJBMM";
-    else // Z == 18
-        mode = @"FGD";
+    NSString *map = @"std";
+    switch (self->mapMode) {
+        case MAPMODE_PALE:
+            if ((12 <= z) && (z <= 17))
+                map = @"pale";
+            break;
+        case MAPMODE_BLANK:
+            if ((5 <= z) && (z <= 14))
+                map = @"blank";
+            break;
+        case MAPMODE_ENGLISH:
+            if ((5 <= z) && (z <= 11))
+                map = @"english";
+            break;
+        case MAPMODE_RELIEF:
+            if ((5 <= z) && (z <= 15))
+                map = @"relief";
+            break;
+        case MAPMODE_ORT:
+            if ((15 <= z) && (z <= 17))
+                map = @"ort";
+            break;
+        case MAPMODE_GAZO1:
+            if ((15 <= z) && (z <= 17))
+                map = @"gazo1";
+            break;
+        case MAPMODE_GAZO2:
+            if ((15 <= z) && (z <= 17))
+                map = @"gazo2";
+            break;
+        case MAPMODE_GAZO3:
+            if ((15 <= z) && (z <= 17))
+                map = @"gazo3";
+            break;
+        case MAPMODE_GAZO4:
+            if ((15 <= z) && (z <= 17))
+                map = @"gazo4";
+            break;
+        default:  // or MAPMODE_STD:
+            break;
+    }
 
     for (NSInteger x = minX; x < maxX; x++) {
-        NSString *x_str = [NSString stringWithFormat:@"%07d", x];
-        unichar X0 = [x_str characterAtIndex:0];
-        unichar X1 = [x_str characterAtIndex:1];
-        unichar X2 = [x_str characterAtIndex:2];
-        unichar X3 = [x_str characterAtIndex:3];
-        unichar X4 = [x_str characterAtIndex:4];
-        unichar X5 = [x_str characterAtIndex:5];
         for (NSInteger y = minY; y < maxY; y++) {
-            NSString *y_str = [NSString stringWithFormat:@"%07d", y];
-            unichar Y0 = [y_str characterAtIndex:0];
-            unichar Y1 = [y_str characterAtIndex:1];
-            unichar Y2 = [y_str characterAtIndex:2];
-            unichar Y3 = [y_str characterAtIndex:3];
-            unichar Y4 = [y_str characterAtIndex:4];
-            unichar Y5 = [y_str characterAtIndex:5];
-            
-            NSString *tileKey = [[NSString alloc] initWithFormat:@"sqras/all/%@/latest/%d/%C%C/%C%C/%C%C/%C%C/%C%C/%C%C/%@%@", mode, z, X0, Y0, X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5, x_str, y_str]; // was flippedY
+                NSString *tileKey = [[NSString alloc] initWithFormat:@"xyz/%@/%d/%d/%d", map, z, x, y];
                 if (!tiles) {
                     tiles = [NSMutableArray array];
                 }
