@@ -31,7 +31,7 @@ https://github.com/nutiteq/ldiw-iphone
 # このコードの使用方法
 1. TileOverlayフォルダ内のコードを使用するプロジェクトに追加。
 2. プロジェクト内のMKMapViewを管理するViewControllerから、TileOverlayをMKMapViewにaddOverlayする。
-```Objective-C
+```
 overlay = [[TileOverlay alloc] initOverlay];
 [map addOverlay:overlay];
 ```
