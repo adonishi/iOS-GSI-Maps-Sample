@@ -12,6 +12,8 @@ https://github.com/nutiteq/ldiw-iphone
 iOS内蔵のMapKitにオーバーレイする形で、地理院地図のタイル画像を表示します。
 (旧：電子国土 v4 iOS サンプルコード）
 MapKitの機能がそのまま使用できるので、場所表示ピンやルートなどの機能も同様に使用する事ができます。
+地理院地図で増えたタイルのスタイルも設定できます。
+http://portal.cyberjapan.jp/help/development.html#h4-1
 
 オーバーレイ方法は、OpenStreetMap Wiki にある "OSM in MapKit" のコードをベースとして使用しています。
 http://wiki.openstreetmap.org/wiki/OSM_in_MapKit
@@ -29,7 +31,7 @@ https://github.com/nutiteq/ldiw-iphone
 # このコードの使用方法
 1. TileOverlayフォルダ内のコードを使用するプロジェクトに追加。
 2. プロジェクト内のMKMapViewを管理するViewControllerから、TileOverlayをMKMapViewにaddOverlayする。
-```
+```Objective-C
 overlay = [[TileOverlay alloc] initOverlay];
 [map addOverlay:overlay];
 ```
