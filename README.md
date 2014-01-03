@@ -36,11 +36,13 @@ https://github.com/nutiteq/ldiw-iphone
 overlay = [[TileOverlay alloc] initOverlay];
 [map addOverlay:overlay];
 ```
-
 3. (Optional) タイルのスタイルを変更する場合にはTileOverlayのmapModeプロパティに、MAPMODE_STD ~ MAPMODE_GAZO4 (TileOverlay.h参照)等の値を設定してください。
 
 # 既知の問題
 * ~~(fixed)オーバーレイとしてタイル画像を表示するので、タイル画像の取得が遅い場合や、タイルが無い場合等にはapple版の地図が表示されてしまう。~~
+
+# もっと簡単な方法。
+* もしiOS7以降のみ対応でいいなら、MapKitの機能のみで実現できる。https://gist.github.com/adonishi/8235292 を参照。
 
 # このコードのライセンス
 ベースに使用した、"Lets do it World"のライセンスと同様、FreeBSD Licenseとします。
