@@ -21,6 +21,12 @@
 {
     [super viewDidLoad];
 
+    float iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
+    if(iOSVersion < 7.0) {
+        // for iOS 6.x
+        NSArray *views = [[[map subviews] objectAtIndex:0] subviews];
+        [[views objectAtIndex:0] setHidden:YES];
+    }
 
     overlay = [[TileOverlay alloc] initOverlay];
     [map addOverlay:overlay];

@@ -170,4 +170,10 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
     return tiles;
 }
 
+- (BOOL)canReplaceMapContent
+{
+    return YES;
+}
+
+
 @end

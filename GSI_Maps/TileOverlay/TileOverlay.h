@@ -82,5 +82,6 @@
 
 // Return an array of ImageTile objects for the given MKMapRect and MKZoomScale
 - (NSArray *)tilesInMapRect:(MKMapRect)rect zoomScale:(MKZoomScale)scale;
+- (BOOL)canReplaceMapContent;
 
 @end
